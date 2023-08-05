@@ -1,0 +1,662 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Image Background Landing Page</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+      font-family: "Poppins", sans-serif;
+      background: #F2EBEC;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+.section2 {
+    margin-top: 50px;
+}
+.background {
+    margin-bottom: 130%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    left: 0;
+    display: flex;
+}
+
+/* Image is too bright so lets add overlay effect */
+.overlay{
+    position: absolute;
+    /* position absolute to the body tag */
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.section {
+    margin-top: 10%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    background-color: #F2EBEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Adjusted the value from 'center' to 'flex-end' */
+    text-align: center;
+
+}
+.section3 {
+    margin-top: 10%;
+    font-size: 16px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    background-color: #F2EBEC;
+    align-items: center;
+    justify-content: flex-end; /* Adjusted the value from 'center' to 'flex-end' */
+    text-align: center;
+}
+.Mission {
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh
+    }
+}
+
+
+.section h3 {
+    left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 100;
+    margin-top: 5vh;
+    color: black;
+}
+
+.section h3 {
+    font-size: 40px;
+    left: 50px;
+    justify-content: center;
+    align-items: center;
+    left: 30%;
+    margin: 10vh;
+    text-align: center;
+}
+.section2 body{
+      background-image: url('https://media.tenor.com/Ze8lxl-TgaEAAAAC/engineering.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+.section p {
+    font-size: 16px;
+    color: #000;
+}
+
+.campus {
+    height: 100%;
+    margin-bottom: 10;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    background-color: #F2EBEC;
+    border-radius: 10px;
+}
+
+.space2 {
+
+    justify-content: center;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 40px;
+    margin-top: 10w %;
+    box-sizing: border-box;
+
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 85%; /* Adjust the height as needed */
+  right: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  z-index: 100;
+}
+nav header{
+    height: 100%;
+    left: 30%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav header h2{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav header h2 span{
+    color: #fff;
+
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 40px 0 40px;
+    cursor: pointer;
+}
+
+.Header2 {
+margin-top:-3%;
+margin-bottom:-1%;
+
+}
+
+.Header3 {
+margin-top: -5%;
+margin-bottom: 7%;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+nav ul li a.active{
+
+
+    position: relative;
+    /* Keep it relative incase in future if you need to add before and after elements */
+}
+
+nav ul li a:hover{
+    color: #fff;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li:last-child a{
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+nav ul li:last-child a:hover{
+    border: 1px solid #fff;
+}
+
+nav .toggleMenu{
+    display: none;
+}
+/* wrap it inside the div -> Parent div previously was display - flex */
+nav .toggleMenu i{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.container {
+    justify-content: space-between;
+    position: flex;
+    display: flex;
+    position: relative;
+    display: inline-block;
+    width: 90%; /* Adjust the width as needed */
+    height: 90%;
+
+}
+.firstproj img {
+width: 400px;
+height: 200px;
+
+
+}
+
+
+.Header4 {
+margin-bottom:-10%;
+}
+.container img {
+      width: 100%;
+      height: 100%;
+      object-fit:cover;
+    }
+
+
+.section2 {
+    justify-content: center;
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 40px;
+    margin-top: 10w %;
+    box-sizing: border-box;
+}
+
+
+.container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service {
+      text-align: center;
+      margin: -50%;
+      flex-basis: calc(33.33% - 40px);
+      color: green;
+    }
+
+    .service img {
+      margin-top:50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .service h3 {
+      font-size: 13px;
+      color: green;
+      font-weight: bold;
+    }
+
+    .service p {
+      font-size: 14px;
+    }
+
+.contentBox {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Reduce the width to make room for the right alignment */
+    color: #fff;
+    position: relative;
+    padding: 0 50px;
+}
+
+.container h2 {
+    color: #fff !important;
+    left: 10%;
+    backround:#F2EBEC;
+}
+
+.content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+
+  font-size: 18px;
+  color: #555;
+  font-family: Arial, sans-serif;
+  background-color: #3399CC;
+  margin-top:20%;
+  margin-bottom:-10%;
+}
+
+
+
+
+.column {
+
+  float: left;
+  width: 20%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.column img {
+    width: 270px;
+    height: 500px;
+    position: relative;
+    padding: 0 8px;
+
+}
+.row {
+    margin-top: 50px;}
+
+
+.row > .column {
+  padding: 0 7px;
+}
+
+.row:after {
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contentBox h3 {
+    font-size: 3rem;
+}
+.container h3, nav ul li a {
+    color: #fff;
+}
+
+.service h3{
+    color:black;
+    margin-top:50px;
+}
+
+.contentBox p{
+    font-size: 16px;
+    margin: 20px 0 40px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.container a{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(35deg, #fff, rgba(255,255,255,0.6));
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.container a:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.socialMedia {
+    position: fixed; /* Change the position to fixed */
+    bottom: 35%;
+    left: 2%;
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialMedia a {
+    margin: 25px 0;
+    text-decoration: none;
+}
+
+.socialMedia a i, nav header h2 span {
+    color: #fff !important;
+}
+
+
+.socialMedia a i {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 35px;
+}
+
+.socialMedia a i:hover {
+    color: #fff;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background: url('https://api.iconify.design/entypo-social/twitter-with-circle.svg') no-repeat center center / contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+}
+.section4 {
+margin-top: 100%;
+margin-bottom:100%;
+height:100%
+}
+
+    .line {
+      flex: 1;
+      border-right: 10px solid #F2EBEC; /* Adjust the line style as needed */
+      margin-right: 20px; /* Adjust the space between the lines */
+    }
+
+    .line:last-child {
+      border-right: none; /* Remove the right border for the last line */
+      margin-right: 0; /* Remove the margin for the last line */
+    }
+
+.logo i {
+    font-size: 48px;
+    color: #ffff;
+}
+
+
+/* Mobile screen */
+@media screen and (max-width : 500px){
+    .background{
+        left: 0;
+    }
+
+    .overlay{
+        background: rgba(0, 0, 0, 0.6);
+
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .contentBox{
+        width: 100%;
+        padding: 20px;
+        margin-top: 32%;
+    }
+
+    nav ul{
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        /* background: rgba(255, 255, 255, 0.6); */
+
+        position: absolute;
+        top: 65px;
+        left: 0;
+
+        z-index: 101;
+    }
+}
+
+    /* toggle this active class in UL on mouse click */
+    nav ul.active{
+        transform: translateY(3px);
+    }
+
+    nav .toggleMenu{
+        display: block;
+    }
+
+
+    #Mission:target {
+    display: block;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <img src="https://dornob.com/wp-content/uploads/2010/01/Venus-Project-Sea-Cities-futuristic.jpeg" alt="" class="background">
+    <div class="content"></div>
+    <div class="overlay">
+        <nav>
+            <header></header>
+                <h2>
+                    <img src="MobilyAI.png" width="500" height="500">
+                </h2>
+            </header>
+            <ul id="navMenu">
+                <li><a href="#Mission" class="active">Mission</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact Us">Contact Us</a></li>
+            </ul>
+            <div class="toggleMenu">
+            </div>
+        </nav>
+
+        <div id="Mission" class="section">
+            <div class="Header2">
+            <h3> Our vision is to create mechanical solutions for disabled individuals, advancing accessibility and inclusivity through innovative engineering </h3>
+            </div>
+                <div class="row">
+                    <div class="container">
+                        <img src="ArduinoPython.png" alt="Arduino and Python Pictutre">
+                        <div class="lines">
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                          <div class="line"></div>
+                        </div>
+                      </div>
+
+        <div class="Header3" id="Projects">
+        <h3> Our first project is Object Detection for the Blind with Haptic Feedback. We define ourselves with being cost-effective as well as user-centric </h3>
+    </div>
+
+<div class="Header4">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/walk-to-run-program-1616070573.jpg?resize=1200:*" alt="Avatar" class="firstproj">
+    </div>
+
+
+         <div class="footer" id = "Contact Us">
+                <p>&copy; 2023 MobilityAI Inc. | San Francisco Bay Area-based 501(c)(3) nonprofit.</p>
+                <p>Tax ID, Internal Revenue Service: 85-3835765</p>
+        </div>
+              </div>
+        </div>
+        <div class="socialMedia">
+            <a href="#"><i class="fab fa-facebook fa-beat"></i></a>
+            <a href="#"><i class="fab fa-instagram-square fa-beat"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+
+function checkZoomLevel() {
+  var zoomLevel = Math.round(window.devicePixelRatio * 100);
+
+  if (zoomLevel < 100) {
+    document.querySelector('.container').classList.add('single-column');
+  } else {
+    document.querySelector('.container').classList.remove('single-column');
+  }
+}
+
+// Call the function on page load and whenever the window is resized
+window.addEventListener('DOMContentLoaded', checkZoomLevel);
+window.addEventListener('resize', checkZoomLevel);
+
+        // JavaScript code here
+        const menuBtn = document.getElementById("rightMenu");
+        const menu = document.getElementById("navMenu");
+
+        menuBtn.addEventListener("click", () => {
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+            } else {
+                menu.classList.add("active");
+            }
+
+
+        });
+    </script>
+</body
+
+
+
+
+
+
